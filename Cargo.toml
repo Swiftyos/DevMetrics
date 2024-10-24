@@ -1,0 +1,12 @@
+[package]
+name = "dev_metrics"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+git2 = "0.18"
+chrono = "0.4"
+structopt = "0.3"
+notify = "4.0"
+sqlx = { version = "0.7", features = ["runtime-tokio", "tls-native-tls", "sqlite", "chrono"] }
+tokio = { version = "1.0", features = ["full"] }
